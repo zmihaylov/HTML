@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+        table {
+            width:160px;
+        }
+
+        .table-center{
+            text-align:center;
+        }
+
+        .td-right{
+            text-align:right;
+        }
+
+        .td-left{
+            text-align:left;
+        }
+
+        .td-right-bottom {
+            text-align:right;
+            vertical-align:bottom;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-center">
+        <thead>
+            <tr>
+                <th colspan="3">
+                    Title goes here
+                </th>
+                <td>A</td>
+                <td class="td-right">B</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="td-left">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td class="td-right">G</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td colspan="2">I</td>
+                <td rowspan="2" class="td-right-bottom">J</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td class="td-right">N</td>
+                <td colspan="4">O</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
